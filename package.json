@@ -1,0 +1,27 @@
+{
+  "name": "aguja2013",
+  "version": "1.0.0",
+  "description": "Web Ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jade": "jade --watch --pretty lib/*.jade --out .",
+    "styl": "stylus --use nib --compress --watch lib/style.styl --out public/css",
+    "build-js": "NODE_PATH=. browserify -t jadeify ./lib/app.js > ./public/app.js",
+    "serve": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinpfs/aguja2013.git"
+  },
+  "keywords": [
+    "art",
+    "ideas"
+  ],
+  "author": "Agustin Palmieri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agustinpfs/aguja2013/issues"
+  },
+  "homepage": "https://github.com/agustinpfs/aguja2013#readme"
+}
