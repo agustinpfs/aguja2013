@@ -1,0 +1,64 @@
+.Layout
+	font-family: Roboto
+	color green
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100vh
+	&-title 
+		text-align: center
+	&-h1
+		font-size: 1rem
+		font-weight: 300
+		text-transform: uppercase
+	&-logo 
+		width: 11px
+		height: 13px
+		background-color green
+		position: relative
+		margin 1rem auto
+	&-circle
+		background: green
+		// border: 1px solid #666
+		border-radius: 50%
+		height: 15px
+		position: absolute
+		top -15px
+		right -2px
+		// right: 1.3rem
+		// bottom: 2.9rem
+		width: 15px
+		margin 0 auto
+		// -webkit-animation: 1s circle infinite
+		// -moz-animation: 1s circle infinite
+		// -o-animation: 1s circle infinite
+		// -ms-animation: 1s circle infinite
+		animation: 2s circle infinite
+	small 
+		text-align: center
+		font-weight: 300
+		text-transform: uppercase
+
+		
+
+
+
+// @-webkit-keyframes circle {
+// 	0%   {transform: scale(1)}
+// 	100% {transform: scale(2);
+// 			opacity: 0}
+		
+// 		}
+		
+
+@keyframes circle {
+	0%   {transform: scale(1);
+		opacity: .7}
+	50%   {transform: scale(2);
+		opacity: 1}
+	100% {transform: scale(1);
+		opacity: .7}
+		
+		}
+
+			
