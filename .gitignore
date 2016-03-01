@@ -9,6 +9,7 @@ node_modules/
 *.so
 *.sh
 *.mp4
+*.webm
  
 # Packages #
 ############

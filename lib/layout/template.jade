@@ -1,13 +1,24 @@
 .Layout
+	.Layout-video#v
+		video#video
+			source(src='public/assets/corre.mp4', type='video/mp4')
 	.Layout-title
 		//- span.icon-logo1
 		.Layout-logo
 			.Layout-circle
 		h1.Layout-h1 
 			| A g u j a 20 | 13
-		small ideas web
-		
-	
+		small.Layout-description ideas web
+		p.Layout-dev
+			| developers
 
-.Layout-footer
+		.Layout-contact
+			
+			form.Layout-form(action='x', method='post')
+				input#email.Layout-input(type='email', name='email', required='', placeholder='e-mail for receive instructions')			
+				br					
+				input#submit.Layout-submit(type='submit', name='submit', value='Enviar')
+	small.Layout-leyend Un voyage d'un millier de kilomètres commence avec le premier pas. Lao-Tseu
+
+	.Layout-footer
 	//- include ../footer/template.jade 
